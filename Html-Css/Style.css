@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+    font-family: "Titillium Web", sans-serif;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+}
+
+.img {
+    padding-right: 30px;
+}
+
+.context {
+    position: relative;
+}
+
+.context .path {
+    color: #cc2d35;
+    font-size: 14px;
+}
+
+.context .path span {
+    color: #888
+}
+
+.context .path i {
+    color: #555;
+    font-size: 8px;
+    margin: -1px
+}
+
+.context h3 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.context p {
+    background-color: #eee;
+    color: #444;
+    font-size: 12px;
+    padding: 2px;
+    margin: 10px 0;
+    width: max-content;
+}
+
+.context div {
+    margin-bottom: 30px;
+}
+
+.context a {
+    color: #854346;
+}
+
+.context>a {
+    position: absolute;
+    right: 10px;
+}

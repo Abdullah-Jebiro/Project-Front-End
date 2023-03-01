@@ -1,0 +1,12 @@
+{
+    "extends":"../tsconfig.base.json",
+    "compilerOptions": {
+    "removeComments": true,
+    "module": "AMD",
+    "outFile": "../dist/main.js"
+    },
+    "files": [
+        "./main.ts"
+    ]
+}
+  

@@ -1,0 +1,25 @@
+thead {
+    color: blue;
+}
+
+thead h6 {
+    color: black;
+}
+
+thead tr:first-child {
+    border: transparent;
+}
+
+thead th {
+    min-width: 150px;
+}
+
+table {
+    text-align: center;
+}
+
+table tr td:last-child amzn-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

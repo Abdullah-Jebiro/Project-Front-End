@@ -1,0 +1,75 @@
+<div class="card">
+    <div class="card-header">
+        Product List
+    </div>
+    <div class="card-bady">
+
+        <div class="table-responsive">
+            <h5 class="p-3" *ngIf="listFilter.length">Filtered by: {{listFilter}}</h5>
+            <table class="table" *ngIf="products.length">
+                <thead>
+                    <tr class="filter">
+                        <td class="p-3">
+                            <h6>Filter by:</h6>
+                        </td>
+                        <td class="p-3 ps-0">
+                            <div><input type="text" [(ngModel)]="listFilter"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button class=" btn btn-primary" (click)="toggleImage()">
+                                {{displayImage ? 'Hide':'Show'}} Image
+                            </button>
+                        </th>
+                        <th>Product</th>
+                        <th>Code</th>
+                        <th>Available</th>
+                        <th>Price</th>
+                        <th>5 Star Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let p of filteredProducts ">
+                        <td> <img *ngIf="displayImage" [src]="imagePath" [alt]="p.Product" [style.width.px]="imageWidth"> </td>
+                        <td>{{p.Product}}</td>
+
+                        <td>{{p.Code | lowercase | convertToSpace:'-'}}</td>
+                        <td>{{p.Available}}</td>
+                        <td>{{p.Price }}</td>
+                        <td>
+                            <amzn-star [rating]="p.StarRating|toFixed" (ratingClicked)="onRatingClicked($event)"></amzn-star>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="card-bady">
+        <div class="table-responsive">
+            <table class="table" *ngIf=" productsWithCategories$ | async as products">
+                <thead>
+                    <tr>
+                        <th>Image </th>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Code</th>
+                        <th>Available</th>
+                        <th>Price</th>
+                        <th>5 Star Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

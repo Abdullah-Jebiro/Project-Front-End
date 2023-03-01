@@ -1,0 +1,22 @@
+.text-dark-50 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.container {
+  padding-top: 10px;
+}
+.container .row .row {
+  border: 1px solid #333;
+  padding: 1px;
+}
+
+.container .row .row > div{
+  text-align: left;
+  margin: auto;
+}
+
+form{
+    border: rgba(0, 0, 0, 125%) 1px solid;
+    padding: 20px;
+    margin: 10px auto;
+
+}

@@ -1,0 +1,11 @@
+.crop {
+    overflow: hidden;
+}
+
+.crop:hover {
+    color: rgb(51, 57, 230);
+}
+
+div {
+    cursor: pointer;
+}

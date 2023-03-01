@@ -1,0 +1,13 @@
+.text-red{
+    color: red;
+}
+li{
+    width: 70%;
+    background-color: yellow;
+    margin: 2px;
+    height: 40px;
+}
+.b-red{
+    background-color: green; 
+    opacity:1; 
+}
